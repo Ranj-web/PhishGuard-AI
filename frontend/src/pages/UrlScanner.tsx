@@ -15,7 +15,7 @@ const UrlScanner: React.FC = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/api/scan/url', { url }, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/scan/url`, { url }, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setResult(response.data);

@@ -44,7 +44,7 @@ const ActivityMonitor: React.FC = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/api/scan/activity', { urls: urlList }, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/scan/activity`, { urls: urlList }, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setResults(response.data.results);

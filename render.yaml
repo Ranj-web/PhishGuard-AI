@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: phishguard-backend
+    env: node
+    region: Oregon
+    buildCommand: cd backend && npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+    autoDeploy: true
+
+  - type: web
+    name: phishguard-frontend
+    env: static
+    region: Oregon
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    autoDeploy: true
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://phishguard-backend.onrender.com/api
+

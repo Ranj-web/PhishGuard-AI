@@ -219,6 +219,32 @@ For support, email support@phishguard.ai or join our Discord community.
 - [ ] Mobile app development
 - [ ] Integration with popular security tools
 
+## ☁️ Deployment
+
+### Deploy to Render (Recommended for Full Stack)
+
+1. Push your code to GitHub
+2. Go to [Render Dashboard](https://dashboard.render.com)
+3. Create a new Web Service for backend:
+   - Build Command: `cd backend && npm install`
+   - Start Command: `node backend/server.js`
+   - Add Environment Variables: `PORT`, `MONGODB_URI`
+4. Create a new Web Service for frontend:
+   - Build Command: `cd frontend && npm install && npm run build`
+   - Publish Directory: `frontend/build`
+   - Add Environment Variable: `REACT_APP_API_URL` = your-backend-url/api
+5. Enable "Auto Deploy" on push to GitHub
+
+### Deploy to Vercel (Frontend Only)
+
+```bash
+npm i -g vercel
+cd frontend
+vercel
+```
+
+Update the `.env.production` file with your backend API URL before deploying.
+
 ---
 
 **Built with ❤️ for a safer internet**
