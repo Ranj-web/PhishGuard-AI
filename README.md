@@ -2,11 +2,6 @@
 
 A full-stack web application that detects and prevents phishing attacks in real time using AI/ML techniques.
 
-## 🚀 Live Demo
-
-**Frontend**: https://phishguard-frontend.onrender.com
-
-**Backend API**: https://phishguard-backend.onrender.com/api
 
 ---
 
