@@ -2,6 +2,14 @@
 
 A full-stack web application that detects and prevents phishing attacks in real time using AI/ML techniques.
 
+## 🚀 Live Demo
+
+**Frontend**: https://phishguard-frontend.onrender.com
+
+**Backend API**: https://phishguard-backend.onrender.com/api
+
+---
+
 ## 🚀 Features
 
 ### Frontend (React + Tailwind CSS)
@@ -44,8 +52,8 @@ A full-stack web application that detects and prevents phishing attacks in real 
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd phishguard-ai
+git clone https://github.com/Ranj-web/PhishGuard-AI.git
+cd PhishGuard-AI
 ```
 
 ### 2. Backend Setup
@@ -248,3 +256,4 @@ Update the `.env.production` file with your backend API URL before deploying.
 ---
 
 **Built with ❤️ for a safer internet**
+
