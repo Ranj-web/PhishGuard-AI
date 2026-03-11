@@ -3,8 +3,6 @@
 A full-stack web application that detects and prevents phishing attacks in real time using AI/ML techniques.
 
 
----
-
 ## 🚀 Features
 
 ### Frontend (React + Tailwind CSS)
