@@ -236,17 +236,4 @@ For support, email support@phishguard.ai or join our Discord community.
    - Add Environment Variable: `REACT_APP_API_URL` = your-backend-url/api
 5. Enable "Auto Deploy" on push to GitHub
 
-### Deploy to Vercel (Frontend Only)
-
-```bash
-npm i -g vercel
-cd frontend
-vercel
-```
-
-Update the `.env.production` file with your backend API URL before deploying.
-
----
-
-**Built with ❤️ for a safer internet**
 
